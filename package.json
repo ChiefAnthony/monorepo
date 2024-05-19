@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "private": "true",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "packages/api",
+    "packages/web"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules packages/api/node_modules packages/web/node_modules bun.lockb packages/api/bun.lockb packages/web/bun.lockb"
+  },
+  "trustedDependencies": [
+    "svelte-preprocess"
+  ]
+}
